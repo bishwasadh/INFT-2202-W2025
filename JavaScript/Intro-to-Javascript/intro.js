@@ -75,21 +75,77 @@
 // }
 
 
-// Functions
-console.log(sum)
-// Function Declarations
-function sum(a,b) {
-    return a + b
-}
-// Function Expressions
-let sum1 = function (a,b) {
-    return a + b
-}
-// Arrow Functions
-let sum2 = (a,b) => {
-    return a + b
-}
-console.log(sum(10, 20))
+// // Functions
+// console.log(sum)
+// // Function Declarations
+// function sum(a,b) {
+//     return a + b
+// }
+// // Function Expressions
+// let sum1 = function (a,b) {
+//     return a + b
+// }
+// // Arrow Functions
+// let sum2 = (a,b) => {
+//     return a + b
+// }
+// console.log(sum(10, 20))
 
-// Classes
+// // Classes
+// class Car {
+//         constructor(type,brand, year, model, color) {
+//           this.type= type
+//           this.brand = brand
+//           this.year = year
+//           this.model = model 
+//           this.color = color
+//         }
+//     }
+
+
+
 // DOM: Document Object Model 
+
+console.log("Hello World!")
+console.log(document)
+
+// document.body.style.backgroundColor = "Yellow" 
+
+// User stories
+// 1. AAU, I want to be able to typr a new blog post into a textbox
+// 2. AAU, I want to be able to click a button to publish my post
+// 3. AAU, I want to be able to view all the blog posts
+// 4. Bonus: AAU, I want to be able to delete a blog post
+
+
+// setup
+function setupBlogPage() {
+    //create form (after)
+    //create input element and display on page
+    let blogpost = document.createElement("input")
+    blogpost.setAttribute("type", "text")
+    blogpost.setAttribute("id", "blogInput")
+    document.body.appendChild(blogpost)
+
+    //create button to submit the blog post
+    let submitButton = document.createElement("button")
+    submitButton.setAttribute("type", "submit")
+    submitButton.innerText = "Publish Blog Post"
+    submitButton.addEventListener("click", publishPost)
+    document.body.appendChild(submitButton)
+
+}
+setupBlogPage()
+
+function publishPost(event) {
+    //grab data from input field
+    let blogInput = document.getElementById("blogInput").value 
+    console.log(blogInput)
+    let blogPost = document.createElement("div")
+    blogPost.innerText = blogInput
+    document.body.appendChild(blogPost)
+}
+
+//activity;
+
+// 1. store input annd button  elements 
