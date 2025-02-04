@@ -10,24 +10,26 @@ document.addEventListener("DOMContentLoaded", () => {
     // Products Page Content
     const productContent = `
         <div class="container mt-5">
-            <h2>Our Favorite Media</h2>
+            <h2>Our Favorite Guitars</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="assets/media1.jpg" class="img-fluid" alt="Media 1">
-                    <p>Media 1 description goes here. This is an interesting piece of media that we highly recommend.</p>
+                    <img src="assets/media1.jpg" class="img-fluid" alt="Guitar 1">
+                    <p>This is Guitar 1. It has a unique sound and design that makes it stand out.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/media2.jpg" class="img-fluid" alt="Media 2">
-                    <p>Media 2 description goes here. This is another great piece of media that you should check out.</p>
+                    <img src="assets/media2.jpg" class="img-fluid" alt="Guitar 2">
+                    <p>This is Guitar 2. Known for its versatility and rich tones, it's a favorite among musicians.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/media3.jpg" class="img-fluid" alt="Media 3">
-                    <p>Media 3 description goes here. This is a must-see piece of media that you will enjoy.</p>
+                    <img src="assets/media3.jpg" class="img-fluid" alt="Guitar 3">
+                    <p>This is Guitar 3. Its classic design and exceptional build quality make it a must-have.</p>
                 </div>
             </div>
         </div>
     `;
-    document.querySelector('.nav-link[href="#Products"]').addEventListener('click', () => {
+    document.querySelector('.nav-link[href="#Products"]').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.body.innerHTML = ''; // Clear the existing content
         document.body.innerHTML = productContent;
     });
 
