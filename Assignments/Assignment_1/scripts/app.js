@@ -68,4 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.insertAdjacentHTML('afterbegin', servicesContent); // Insert the services content
     });
 
+    // Event Listener for Home Link
+    document.querySelector('.nav-link[href="#Home"]').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.body.innerHTML = ''; // Clear the existing content
+        document.body.insertAdjacentHTML('afterbegin', homeContent); // Insert the home content
+    });
+
 });
