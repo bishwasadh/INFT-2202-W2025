@@ -27,10 +27,45 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
     `;
+    
+    // Services Page Content
+    const servicesContent = `
+        <div class="container mt-5">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/service1.jpg" class="img-fluid" alt="Graphic Design">
+                    <p>Graphic Design: We create visually appealing designs for your brand.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/service2.jpg" class="img-fluid" alt="Digital Marketing">
+                    <p>Digital Marketing: We help you reach a wider audience with effective marketing strategies.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/service3.jpg" class="img-fluid" alt="IT Consulting">
+                    <p>IT Consulting: We provide expert advice to optimize your IT infrastructure.</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <a href="assets/resume.pdf" class="btn btn-primary" target="_blank">View My Resume</a>
+            </div>
+        </div>
+    `;
+    
+
+
+    // Event Listener for Products Link
     document.querySelector('.nav-link[href="#Products"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.body.innerHTML = ''; // Clear the existing content
-        document.body.innerHTML = productContent;
+        document.body.insertAdjacentHTML('afterbegin', productContent);
+    });
+
+    // Event Listener for Services Link
+    document.querySelector('.nav-link[href="#Services"]').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.body.innerHTML = ''; // Clear the existing content
+        document.body.insertAdjacentHTML('afterbegin', servicesContent); // Insert the services content
     });
 
 });
