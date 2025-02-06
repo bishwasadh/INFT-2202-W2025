@@ -50,29 +50,33 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
     const contactContent = `
-    <div class="container mt-5">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="contact-number" class="form-label">Contact Number</label>
-                <input type="text" class="form-control" id="contact-number" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-`;
+        <div class="container mt-5">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contact-number" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="contact-number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    `;
+
+
+
+    
 
     document.querySelector('.nav-link[href="#Home"]').addEventListener('click', (event) => {
         event.preventDefault();
@@ -90,6 +94,12 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', servicesContent);
+    });
+
+    document.querySelector('.nav-link[href="#Contact Us"]').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.getElementById('main-content').innerHTML = '';
+        document.getElementById('main-content').insertAdjacentHTML('afterbegin', contactContent);
     });
 
     document.querySelector('.nav-link[href="#Products"]').textContent = 'Interests';
