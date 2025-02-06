@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
+    document.querySelector('.nav-link[href="#Home"]').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.getElementById('main-content').innerHTML = '';
+        document.getElementById('main-content').insertAdjacentHTML('afterbegin', homeContent);
+    });
+
     document.querySelector('.nav-link[href="#Products"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
