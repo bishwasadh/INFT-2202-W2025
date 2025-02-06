@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', servicesContent);
     });
 
-    document.querySelector('.nav-link[href="#Contact Us"]').addEventListener('click', (event) => {
+    document.querySelector('.nav-link[href="#ContactUs"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', contactContent);
