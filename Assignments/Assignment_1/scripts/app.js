@@ -49,6 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
+    const aboutUsContent = `
+        <div class="container mt-5">
+            <h2>About Us</h2>
+            <p>Welcome to our website! We are a team of passionate individuals dedicated to providing the best services to our clients. Our team consists of experts in various fields, including web development, graphic design, and digital marketing. We believe in continuous learning and improvement, and we strive to stay updated with the latest trends and technologies.</p>
+            <p>In our free time, we enjoy engaging in various hobbies and activities. Some of us are avid readers, while others love to explore the outdoors. We also believe in giving back to the community and actively participate in volunteer work and community service projects.</p>
+            <p>Thank you for visiting our website. We look forward to working with you and helping you achieve your goals.</p>
+            <img src="assets/team.jpg" class="img-fluid" alt="Our Team">
+        </div>
+    `;
+
     const contactContent = `
         <div class="container mt-5">
             <h2>Contact Us</h2>
@@ -74,8 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
-
-
+    
     
 
     document.querySelector('.nav-link[href="#Home"]').addEventListener('click', (event) => {
@@ -96,10 +105,35 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', servicesContent);
     });
 
+    document.querySelector('.nav-link[href="#AboutUs"]').addEventListener('click', (event) => {
+        event.preventDefault();
+        document.getElementById('main-content').innerHTML = '';
+        document.getElementById('main-content').insertAdjacentHTML('afterbegin', aboutUsContent);
+    });
+
     document.querySelector('.nav-link[href="#ContactUs"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', contactContent);
+
+        document.getElementById('contact-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const contactNumber = document.getElementById('contact-number').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            console.log(`Name: ${name}`);
+            console.log(`Contact Number: ${contactNumber}`);
+            console.log(`Email: ${email}`);
+            console.log(`Message: ${message}`);
+
+            // Redirect to Home page after 3 seconds
+            setTimeout(() => {
+                document.getElementById('main-content').innerHTML = '';
+                document.getElementById('main-content').insertAdjacentHTML('afterbegin', homeContent);
+            }, 3000);
+        });
     });
 
     document.querySelector('.nav-link[href="#Products"]').textContent = 'Interests';
