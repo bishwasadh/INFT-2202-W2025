@@ -69,6 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector('.nav-link[href="#Products"]').textContent = 'Interests';
 
+    const hrLink = document.createElement('li');
+    hrLink.classList.add('nav-item');
+    hrLink.innerHTML = '<a class="nav-link" href="#HumanResources"><i class="fas fa-users"></i> Human Resources</a>';
+    document.querySelector('.nav-link[href="#Contact Us"]').parentNode.before(hrLink);
 
 });
 
