@@ -69,6 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector('.nav-link[href="#Products"]').textContent = 'Interests';
 
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
     
 });
 
