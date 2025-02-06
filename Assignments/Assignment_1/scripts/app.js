@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', servicesContent);
     });
 
+    document.querySelector('.nav-link[href="#Products"]').textContent = 'Interests';
+
 
 });
 
