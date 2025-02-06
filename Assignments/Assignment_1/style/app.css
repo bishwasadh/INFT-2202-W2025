@@ -1,5 +1,5 @@
 .home-content {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 60px - 56px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,4 +8,5 @@
 #main-content {
     min-height: calc(100vh - 60px);
     padding-top: 60px;
+    padding-bottom: 56px;
 }
