@@ -141,6 +141,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector('.nav-link[href="#Products"]').textContent = 'Interests';
 
+    // Create a new list item for the Human Resources link
+    let hrListItem = document.createElement('li');
+    hrListItem.className = 'nav-item';
+
+    // Create the anchor tag for the Human Resources link
+    let hrLink = document.createElement('a');
+    hrLink.className = 'nav-link';
+    hrLink.href = '#';
+    hrLink.innerHTML = '<i class="fa fa-users"></i> Human Resources';
+
+    // Append the anchor tag to the list item
+    hrListItem.appendChild(hrLink);
+
+    // Find the About Us link in the navbar
+    let aboutUsLink = document.querySelector('a.nav-link[href="#AboutUs"]');
+
+    // Insert the new Human Resources link before the Contact Us link
+    aboutUsLink.parentNode.insertAdjacentElement('afterend', hrListItem);
+
+
     const currentYear = new Date().getFullYear();
     document.getElementById('current-year').textContent = currentYear;
     
