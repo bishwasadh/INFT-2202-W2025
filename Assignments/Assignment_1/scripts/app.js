@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
     `;
-
+    
     const aboutUsContent = `
         <div class="container mt-5">
             <h2>About Us</h2>
@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
     
+
+
+
     
 
     document.querySelector('.nav-link[href="#Home"]').addEventListener('click', (event) => {
