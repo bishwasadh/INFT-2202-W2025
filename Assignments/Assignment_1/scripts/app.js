@@ -4,15 +4,24 @@
  * Date Completed: Feb 07, 2025
  */
 
-
+// Function to handle the DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", () => {
+    
+    /**
+     * Function to handle the DOMContentLoaded event.
+     * Initializes the content for the home page and sets up event listeners for navigation links.
+     */
+
+    // Content for the Home page
     const homeContent = `
         <div class="home-content" style="background-image: url('assets/background.jpg'); height: calc(100vh - 60px); background-size: cover; display: flex; justify-content: center; align-items: center;">
             <h1>Welcome to Our Site!</h1>
         </div>
     `;
+    // Insert the home content into the main content area
     document.getElementById('main-content').insertAdjacentHTML('afterbegin', homeContent);
 
+    // Content for the Products, Services, About Us, and Contact Us pages
     const productContent = `
         <div class="container mt-5">
             <h2>Our Favorite Guitars</h2>
@@ -33,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
+    // Content for the Services page
     const servicesContent = `
         <div class="container mt-5">
             <h2>Our Services</h2>
@@ -56,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
     
+    // Content for the About Us page
     const aboutUsContent = `
         <div class="container mt-5">
             <h2>About Us</h2>
@@ -66,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
 
+    // Content for the Contact Us page
     const contactContent = `
         <div class="container mt-5">
             <h2>Contact Us</h2>
@@ -90,42 +102,60 @@ document.addEventListener("DOMContentLoaded", () => {
             </form>
         </div>
     `;
-
     
-
-
-
-    
-
+    /**
+     * Event listener for the Home link.
+     * Loads the home content into the main content area.
+     */
     document.querySelector('.nav-link[href="#Home"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', homeContent);
     });
 
+    /**
+     * Event listener for the Products link.
+     * Loads the product content into the main content area.
+     */
     document.querySelector('.nav-link[href="#Products"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', productContent);
     });
 
+    /**
+     * Event listener for the Services link.
+     * Loads the services content into the main content area.
+     */
     document.querySelector('.nav-link[href="#Services"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', servicesContent);
     });
 
+
+    /**
+     * Event listener for the About Us link.
+     * Loads the about us content into the main content area.
+     */
     document.querySelector('.nav-link[href="#AboutUs"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', aboutUsContent);
     });
 
+
+    /**
+     * Event listener for the Contact Us link.
+     * Loads the contact content into the main content area and sets up the form submission handler.
+     */
+    
     document.querySelector('.nav-link[href="#ContactUs"]').addEventListener('click', (event) => {
         event.preventDefault();
         document.getElementById('main-content').innerHTML = '';
         document.getElementById('main-content').insertAdjacentHTML('afterbegin', contactContent);
 
+        // Form submission handler
         document.getElementById('contact-form').addEventListener('submit', (event) => {
             event.preventDefault();
             const name = document.getElementById('name').value;
@@ -133,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
+            // Display the form data in the console
             console.log(`Name: ${name}`);
             console.log(`Contact Number: ${contactNumber}`);
             console.log(`Email: ${email}`);
@@ -146,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Change the Products link to Interests
     document.querySelector('.nav-link[href="#Products"]').textContent = 'Interests';
 
     // Create a new list item for the Human Resources link
@@ -167,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Insert the new Human Resources link before the Contact Us link
     aboutUsLink.parentNode.insertAdjacentElement('afterend', hrListItem);
 
-
+    // Update the current year in the footer
     const currentYear = new Date().getFullYear();
     document.getElementById('current-year').textContent = currentYear;
     
