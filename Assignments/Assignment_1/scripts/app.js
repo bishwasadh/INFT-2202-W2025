@@ -1,3 +1,10 @@
+/**
+ * Full Name: Bishwas Adhikari
+ * Student ID: 100932586
+ * Date Completed: Feb 07, 2025
+ */
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const homeContent = `
         <div class="home-content" style="background-image: url('assets/background.jpg'); height: calc(100vh - 60px); background-size: cover; display: flex; justify-content: center; align-items: center;">
