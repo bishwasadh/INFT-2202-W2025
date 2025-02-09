@@ -1,3 +1,4 @@
+/* Styles for the home content section */
 .home-content {
     height: calc(100vh - 60px - 56px);
     display: flex;
@@ -5,6 +6,7 @@
     align-items: center;
 }
 
+/* Styles for the main content section */
 #main-content {
     min-height: calc(100vh - 60px);
     padding-top: 60px;
@@ -21,6 +23,7 @@
     padding: 10px 15px;
 }
 
+/* Hover effect for navbar links */
 .navbar-nav .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
