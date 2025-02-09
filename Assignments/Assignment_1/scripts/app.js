@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="row">
                 <div class="col-md-4">
                     <img src="assets/media1.jpg" class="img-fluid" alt="Guitar 1">
-                    <p>Christian Bale: My favorite actor known for his versatile roles and dedication to his craft.</p>
+                    <p><strong>Christian Bale:</strong> My favorite actor known for his versatile roles and dedication to his craft.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="assets/media2.jpg" class="img-fluid" alt="Guitar 2">
