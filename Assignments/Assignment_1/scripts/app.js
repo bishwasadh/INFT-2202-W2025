@@ -24,19 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Content for the Products, Services, About Us, and Contact Us pages
     const productContent = `
         <div class="container mt-5">
-            <h2>Our Favorite Guitars</h2>
+            <h2>My Favorite Media</h2>
             <div class="row">
                 <div class="col-md-4">
                     <img src="assets/media1.jpg" class="img-fluid" alt="Guitar 1">
-                    <p>This is Guitar 1. It has a unique sound and design that makes it stand out.</p>
+                    <p>Christian Bale: My favorite actor known for his versatile roles and dedication to his craft.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="assets/media2.jpg" class="img-fluid" alt="Guitar 2">
-                    <p>This is Guitar 2. Known for its versatility and rich tones, it's a favorite among musicians.</p>
+                    <p><strong>Breaking Bad:</strong> My favorite TV show, a gripping story of a high school chemistry teacher turned methamphetamine manufacturer.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="assets/media3.jpg" class="img-fluid" alt="Guitar 3">
-                    <p>This is Guitar 3. Its classic design and exceptional build quality make it a must-have.</p>
+                    <p><strong>TEDx:</strong> My favorite platform for inspiring talks and ideas worth spreading.</p>
                 </div>
             </div>
         </div>
