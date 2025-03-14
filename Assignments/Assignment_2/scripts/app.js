@@ -29,6 +29,26 @@
      */
     function Start() {
         console.log("App Started...");
+
+        // Handle login form submission
+        $("#loginForm").on("submit", function(event) {
+            event.preventDefault();
+            
+            let username = $("#username").val();
+            
+            // Insert username between Contact Us and Login links
+            let contactLink = $("a.nav-link[href='contact.html']").parent();
+            let loginLink = $("a.nav-link[href='login.html']").parent();
+            
+            // Remove any existing username display
+            $(".navbar-text").remove();
+            
+            // Create and insert username element
+            let usernameElement = $("<li class='navbar-text text-white me-3'>Welcome, " + username + "!</li>");
+            usernameElement.insertAfter(contactLink);
+            
+            console.log(`User ${username} logged in`);
+        });
     }
 
     // Add event listener for when the window loads
