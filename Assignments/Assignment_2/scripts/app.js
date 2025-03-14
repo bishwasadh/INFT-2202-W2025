@@ -25,6 +25,16 @@
     }
 
     /**
+     * Validates a field to ensure it contains at least minLength characters
+     * @param {string} fieldValue - The value to check
+     * @param {number} minLength - The minimum length required
+     * @returns {boolean} - True if valid, false otherwise
+     */
+    function validateMinLength(fieldValue, minLength) {
+        return fieldValue.length >= minLength;
+    }
+
+    /**
      * Validates that an email contains @ symbol and is at least 8 characters
      * @param {string} email - The email to validate
      * @returns {boolean} - True if valid, false otherwise
@@ -44,13 +54,20 @@
     }
 
     /**
-     * Validates a field to ensure it contains at least minLength characters
-     * @param {string} fieldValue - The value to check
-     * @param {number} minLength - The minimum length required
-     * @returns {boolean} - True if valid, false otherwise
+     * Displays an error message in the ErrorMessage div
+     * @param {string} message - The error message to display
      */
-    function validateMinLength(fieldValue, minLength) {
-        return fieldValue.length >= minLength;
+    function displayError(message) {
+        const errorDiv = $("#ErrorMessage");
+        errorDiv.text(message);
+        errorDiv.show();
+    }
+
+    /**
+     * Hides the error message div
+     */
+    function clearError() {
+        $("#ErrorMessage").hide();
     }
     
     /**
@@ -78,6 +95,9 @@
             
             console.log(`User ${username} logged in`);
         });
+        
+        // Hide error message when page loads
+        clearError();
     }
 
     // Add event listener for when the window loads
