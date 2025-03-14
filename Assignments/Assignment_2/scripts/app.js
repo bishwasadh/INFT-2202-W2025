@@ -23,6 +23,35 @@
             this.password = password;
         }
     }
+
+    /**
+     * Validates that an email contains @ symbol and is at least 8 characters
+     * @param {string} email - The email to validate
+     * @returns {boolean} - True if valid, false otherwise
+     */
+    function validateEmail(email) {
+        return email.length >= 8 && email.includes("@");
+    }
+
+    /**
+     * Validates that passwords match and are at least 6 characters
+     * @param {string} password - The password
+     * @param {string} confirmPassword - The confirmation password
+     * @returns {boolean} - True if valid, false otherwise
+     */
+    function validatePassword(password, confirmPassword) {
+        return password.length >= 6 && password === confirmPassword;
+    }
+
+    /**
+     * Validates a field to ensure it contains at least minLength characters
+     * @param {string} fieldValue - The value to check
+     * @param {number} minLength - The minimum length required
+     * @returns {boolean} - True if valid, false otherwise
+     */
+    function validateMinLength(fieldValue, minLength) {
+        return fieldValue.length >= minLength;
+    }
     
     /**
      * This function initializes the application
