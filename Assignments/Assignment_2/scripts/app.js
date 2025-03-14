@@ -98,6 +98,44 @@
         
         // Hide error message when page loads
         clearError();
+
+            // Validate first name
+            if (!validateMinLength(firstName, 2)) {
+                displayError("First Name must be at least 2 characters long");
+                return;
+            }
+    
+            // Validate last name
+            if (!validateMinLength(lastName, 2)) {
+                displayError("Last Name must be at least 2 characters long");
+                return;
+            }
+            
+            // Validate email
+            if (!validateEmail(email)) {
+                displayError("Email must be at least 8 characters long and include @ symbol");
+                return;
+            }
+    
+            // Validate password
+            if (!validatePassword(password, confirmPassword)) {
+                displayError("Passwords must match and be at least 6 characters long");
+                return;
+            }
+            
+            // If we reach here, form is valid - create User object
+            let user = new User(firstName, lastName, email, password);
+            
+            // Log the user object to console
+            console.log("User Created:");
+            console.log(user);
+    
+            // Clear the form
+            this.reset();
+                
+            console.log("Registration form submitted successfully!");
+        });
+            
     }
 
     // Add event listener for when the window loads
