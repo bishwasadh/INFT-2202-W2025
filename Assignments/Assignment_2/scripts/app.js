@@ -99,6 +99,22 @@
         // Hide error message when page loads
         clearError();
 
+        // Handle register form validation
+        $("#registerForm").on("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+            
+
+        // Get form field values
+         let firstName = $("#firstName").val();
+         let lastName = $("#lastName").val();
+         let email = $("#email").val();
+         let password = $("#password").val();
+         let confirmPassword = $("#confirmPassword").val();
+    
+         // Reset error state
+         clearError();
+        
+
             // Validate first name
             if (!validateMinLength(firstName, 2)) {
                 displayError("First Name must be at least 2 characters long");
