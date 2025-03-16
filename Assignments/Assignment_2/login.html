@@ -39,8 +39,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="register.html"><i class="fas fa-user-plus"></i> Register</a>
-                        </li>
-                        
+                        </li>                        
                     </ul>
                 </div>
             </div>
@@ -56,17 +55,19 @@
                     </div>
                     <div class="card-body">
                         <div id="messageArea"></div>
-                <form method="post" id="loginForm">
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" name="username" required>
+                        <form method="post" id="loginForm">
+                             <div class="mb-3">
+                                   <label for="username" class="form-label">Username</label>
+                                   <input type="text" class="form-control" id="username" name="username" required>
+                             </div>
+                            <div class="mb-3">
+                                   <label for="password" class="form-label">Password</label>
+                                   <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <button type="submit" id="loginButton" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Login</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
-                    <button type="submit" id="loginButton" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Login</button>
-                </form>
+                </div>
             </div>
         </div>
     </main>
