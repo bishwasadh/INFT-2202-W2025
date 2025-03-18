@@ -1,5 +1,5 @@
 import { pokemonParty, addPokemon,
-removePokemon} from '../models/Pokemon'
+removePokemon} from '../models/pokemon'
 
 
 export function displayHomepage(req: Request, res: any): any {
