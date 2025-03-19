@@ -1,5 +1,25 @@
 import { pokemonParty, addPokemon,
-removePokemon} from '../models/pokemon'
+removePokemon} from '../models/Pokemon'
+
+export function savePokemonToParty(request: any, response: any) {
+    // let pokemonName = request.body?.pokemonName;
+    // let pokemonWeight = request.body?.pokemonWeight;
+    // let pokemonImage = request.body?.pokemonImage;
+    
+    let { pokemonName, pokemonWeight, pokemonImage } = request.body
+
+    let newPokemon: Pokemon = {
+         name: pokemonName,
+         weight: pokemonWeight,
+         image: pokemonImage
+    }
+    addPokemon(newPokemon)
+    let pokemonParty = getPokemonParty()
+    response.render('myPokemonParty.ejs', {pokemonParty})
+}
+export function showPokemonParty(req: any, res: any) {
+    let pokemonParty = getPokemonParty()
+    res.render('myPokemonParty.ejs', {pokemonParty})
 
 export function displayHomepage(req: Request, res: any): any {
 
