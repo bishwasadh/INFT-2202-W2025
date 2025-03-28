@@ -3,6 +3,8 @@
  * @author Bishwas Adhikari
  * @studentID 100932586
  * @date March 28, 2025
+ * @description This file contains the main application logic for loading the header and footer on each page.
+ *              It uses an IIFE (Immediately Invoked Function Expression) to encapsulate the code and avoid global scope pollution.
  */
 
 // IIFE - Immediately Invoked Function Expression
