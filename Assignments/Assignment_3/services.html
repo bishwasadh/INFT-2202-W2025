@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBD 6201 - Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -12,33 +13,187 @@
         <!-- Navigation will go here -->
     </header>
 
+    <!-- Services Hero Section -->
+    <section class="hero-section text-white mb-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">Our Services</h1>
+                    <p class="lead fs-4 mb-0">Expert web development solutions using modern technologies and best practices</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" 
+                         class="img-fluid rounded feature-img" 
+                         alt="Web Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <main class="container mt-4">
-        <h1>Our Services</h1>
-        <p>Explore the range of services we offer to our clients.</p>
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="content-box p-4 text-center">
+                    <h2 class="section-title mb-4">What We Offer</h2>
+                    <p class="lead mb-0">We provide comprehensive web development services with a focus on modern technologies and API integration.</p>
+                </div>
+            </div>
+        </div>
         
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Custom website development using the latest technologies.</p>
+                <div class="service-card card h-100 shadow">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon-container mb-3">
+                            <i class="fas fa-laptop-code service-icon"></i>
+                        </div>
+                        <h3 class="card-title h4">Web Development</h3>
+                        <p class="card-text">Custom website development using modern JavaScript frameworks and responsive design techniques.</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> Responsive Design</li>
+                            <li><i class="fas fa-check text-success me-2"></i> JavaScript Frameworks</li>
+                            <li><i class="fas fa-check text-success me-2"></i> API Integration</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Performance Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent text-center border-0 pb-4">
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
+            
             <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Mobile Apps</h5>
-                        <p class="card-text">Mobile application development for iOS and Android.</p>
+                <div class="service-card card h-100 shadow">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon-container mb-3">
+                            <i class="fas fa-mobile-alt service-icon"></i>
+                        </div>
+                        <h3 class="card-title h4">Mobile Apps</h3>
+                        <p class="card-text">Feature-rich mobile application development for iOS and Android platforms with seamless API integration.</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> Cross-Platform Development</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Native iOS & Android</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Push Notifications</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Offline Capabilities</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-transparent text-center border-0 pb-4">
+                        <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
+            
             <div class="col">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">UI/UX Design</h5>
-                        <p class="card-text">User interface and experience design for digital products.</p>
+                <div class="service-card card h-100 shadow">
+                    <div class="card-body text-center p-4">
+                        <div class="service-icon-container mb-3">
+                            <i class="fas fa-paint-brush service-icon"></i>
+                        </div>
+                        <h3 class="card-title h4">UI/UX Design</h3>
+                        <p class="card-text">User-centered design solutions that focus on creating intuitive and engaging digital experiences.</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i> User Research</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Wireframing & Prototyping</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Usability Testing</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Visual Design</li>
+                        </ul>
                     </div>
+                    <div class="card-footer bg-transparent text-center border-0 pb-4">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="content-box p-4 h-100">
+                    <h2 class="section-title mb-4">Our Process</h2>
+                    <div class="d-flex mb-3">
+                        <div class="process-number">1</div>
+                        <div>
+                            <h3 class="h5">Discovery & Planning</h3>
+                            <p>We begin by understanding your requirements and planning the project scope and timeline.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="process-number">2</div>
+                        <div>
+                            <h3 class="h5">Design & Development</h3>
+                            <p>Our team creates designs and develops the solution with regular client feedback.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="process-number">3</div>
+                        <div>
+                            <h3 class="h5">Testing & Deployment</h3>
+                            <p>We thoroughly test the solution and deploy it to your preferred environment.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="process-number">4</div>
+                        <div>
+                            <h3 class="h5">Support & Maintenance</h3>
+                            <p>We provide ongoing support and maintenance to keep your solution running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="content-box p-4 h-100">
+                    <h2 class="section-title mb-4">Technologies We Use</h2>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4">
+                            <div class="tech-badge">
+                                <i class="fab fa-html5 fa-2x text-danger"></i>
+                                <span>HTML5</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="tech-badge">
+                                <i class="fab fa-css3-alt fa-2x text-primary"></i>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="tech-badge">
+                                <i class="fab fa-js fa-2x text-warning"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="tech-badge">
+                                <i class="fab fa-react fa-2x text-info"></i>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="tech-badge">
+                                <i class="fab fa-node-js fa-2x text-success"></i>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="tech-badge">
+                                <i class="fab fa-bootstrap fa-2x text-purple"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="cta-box p-4 text-center">
+                    <h2 class="h3 mb-3">Ready to start your project?</h2>
+                    <p class="mb-4">Contact us today to discuss how we can help bring your ideas to life.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane me-2"></i>Get in Touch
+                    </a>
                 </div>
             </div>
         </div>
@@ -50,5 +205,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scripts/app.js"></script>
+    
 </body>
 </html>
