@@ -12,48 +12,142 @@
         <!-- Navigation will go here -->
     </header>
 
-    <main class="container">
-        <h1 class="mb-4">Welcome to WEBD 6201 Lab 3</h1>
-        <p class="lead mb-5">This assignment demonstrates the use of AJAX and Fetch API calls to create a dynamic blog page.</p>
+    <!-- Hero Section -->
+    <div class="bg-primary text-white py-5 mb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold mb-3">WEBD 6201 Lab 3</h1>
+                    <p class="lead fs-4 mb-4">Exploring dynamic content generation with AJAX and Fetch API calls</p>
+                    <a href="blog.html" class="btn btn-light btn-lg px-4 me-2">
+                        <i class="fas fa-blog me-2"></i>View Blog
+                    </a>
+                    <a href="about.html" class="btn btn-outline-light btn-lg px-4">
+                        <i class="fas fa-info-circle me-2"></i>About
+                    </a>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=600&h=400&fit=crop" class="img-fluid rounded shadow" alt="API Illustration">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <main class="container">
+        <!-- Feature Cards Section -->
         <div class="row mb-5">
             <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h2 class="card-title">Blog Feature</h2>
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="bg-primary text-white p-3 rounded-circle me-3">
+                                <i class="fas fa-newspaper"></i>
+                            </span>
+                            <h2 class="card-title h3 mb-0">Blog Feature</h2>
+                        </div>
                         <p class="card-text">Our blog page demonstrates fetching data from external APIs:</p>
-                        <ul>
-                            <li>Retrieves blog posts from JSONPlaceholder API</li>
-                            <li>Displays images relevant to each post</li>
-                            <li>Uses Bootstrap card layout with Flexbox</li>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item bg-transparent px-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>Retrieves blog posts from JSONPlaceholder API
+                            </li>
+                            <li class="list-group-item bg-transparent px-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>Displays images relevant to each post
+                            </li>
+                            <li class="list-group-item bg-transparent px-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>Uses Bootstrap card layout with Flexbox
+                            </li>
                         </ul>
-                        <a href="blog.html" class="btn btn-primary">Visit Blog Page</a>
+                        <a href="blog.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right me-2"></i>Visit Blog Page
+                        </a>
                     </div>
                 </div>
             </div>
             
             <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h2 class="card-title">Technologies Used</h2>
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="bg-primary text-white p-3 rounded-circle me-3">
+                                <i class="fas fa-code"></i>
+                            </span>
+                            <h2 class="card-title h3 mb-0">Technologies Used</h2>
+                        </div>
                         <p class="card-text">This project showcases several modern web technologies:</p>
-                        <ul>
-                            <li>Fetch API for asynchronous HTTP requests</li>
-                            <li>Bootstrap 5 for responsive design</li>
-                            <li>Flexbox for flexible layouts</li>
-                            <li>Dynamic content generation with JavaScript</li>
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item bg-transparent px-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>Fetch API for asynchronous HTTP requests
+                            </li>
+                            <li class="list-group-item bg-transparent px-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>Bootstrap 5 for responsive design
+                            </li>
+                            <li class="list-group-item bg-transparent px-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>Flexbox for flexible layouts
+                            </li>
+                            <li class="list-group-item bg-transparent px-0">
+                                <i class="fas fa-check-circle text-success me-2"></i>Dynamic content generation with JavaScript
+                            </li>
                         </ul>
-                        <a href="about.html" class="btn btn-primary">Learn More</a>
+                        <a href="about.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-right me-2"></i>Learn More
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="alert alert-primary" role="alert">
-            <h4 class="alert-heading">Assignment Objective</h4>
-            <p>The main objective of this assignment is to practice and demonstrate the use of Ajax and Fetch API calls to external data sources.</p>
-            <hr>
-            <p class="mb-0">Explore the blog page to see this implementation in action!</p>
+        <!-- Assignment Objective Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card bg-light border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h2 class="card-title h3 mb-3">
+                            <i class="fas fa-tasks me-2 text-primary"></i>Assignment Objective
+                        </h2>
+                        <p class="card-text">The main objective of this assignment is to practice and demonstrate the use of Ajax and Fetch API calls to external data sources. These technologies allow web applications to:</p>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mb-3">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-sync-alt text-primary fs-4 me-3"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6">Asynchronous Updates</h5>
+                                        <p class="small text-muted">Update content without page refreshes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-server text-primary fs-4 me-3"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6">External Data</h5>
+                                        <p class="small text-muted">Fetch content from third-party APIs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-mobile-alt text-primary fs-4 me-3"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6">Improved UX</h5>
+                                        <p class="small text-muted">Create smoother, app-like experiences</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="blog.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-eye me-2"></i>See it in action
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
