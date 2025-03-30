@@ -1,6 +1,6 @@
 /**
  * @fileoverview Blog functionality - Fetches and displays blog posts with images
- * @author Bishwas Adhikari
+ * @author  Bishwas Adhikari
  * @studentID 100932586
  * @date March 28, 2025
  */
