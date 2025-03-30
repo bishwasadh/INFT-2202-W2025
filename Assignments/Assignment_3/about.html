@@ -12,9 +12,139 @@
         <!-- Navigation will go here -->
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero-section text-white mb-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">About This Project</h1>
+                    <p class="lead fs-4 mb-4">WEBD 6201 Lab 3 demonstrates modern web development with AJAX and Fetch API integration</p>
+                    <a href="blog.html" class="btn btn-light btn-lg px-4">View the Blog</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?w=600&h=400&fit=crop" 
+                         class="img-fluid rounded feature-img" 
+                         alt="API Integration">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <main class="container mt-4">
-        <h1>About Us</h1>
-        <p>This is the about page of my WEBD 6201 Lab 3 assignment.</p>
+        <div class="row mb-5">
+            <div class="col-lg-8">
+                <div class="content-box p-4 mb-4">
+                    <h2 class="h3 mb-3 section-title">Project Overview</h2>
+                    <p>This assignment focuses on creating a functional blog page that retrieves data from external APIs. The main features include:</p>
+                    <ul class="feature-list mb-4">
+                        <li>
+                            <i class="fas fa-check-circle text-success me-2"></i>Fetching blog posts from JSONPlaceholder API
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle text-success me-2"></i>Displaying posts with relevant images
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle text-success me-2"></i>Implementing responsive design using Bootstrap
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle text-success me-2"></i>Creating reusable components with JavaScript
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card author-card shadow">
+                    <div class="card-body">
+                        <h2 class="h4 card-title section-title">Author Info</h2>
+                        <div class="text-center mb-3">
+                            <img src="https://avatars.githubusercontent.com/u/68661869?v=4" 
+                                 alt="Bishwas Adhikari" 
+                                 class="author-image rounded-circle mb-3">
+                            <h3 class="h5">Bishwas Adhikari</h3>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-id-card text-primary me-2"></i>
+                                <strong>Student ID:</strong> 100932586
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-calendar text-primary me-2"></i>
+                                <strong>Date:</strong> March 28, 2025
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-code text-primary me-2"></i>
+                                <strong>Course:</strong> WEBD 6201
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h3 mb-4 section-title">Technologies Used</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="tech-card card h-100">
+                            <div class="card-body text-center">
+                                <i class="fab fa-js fa-3x text-warning mb-3"></i>
+                                <h3 class="card-title h5">JavaScript & AJAX</h3>
+                                <p class="card-text">Used to fetch data from external APIs and update the DOM dynamically without page refreshes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card card h-100">
+                            <div class="card-body text-center">
+                                <i class="fab fa-bootstrap fa-3x text-purple mb-3"></i>
+                                <h3 class="card-title h5">Bootstrap 5</h3>
+                                <p class="card-text">Provides responsive layout and UI components for a consistent and modern design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tech-card card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                                <h3 class="card-title h5">External APIs</h3>
+                                <p class="card-text">JSONPlaceholder for blog content and image APIs for visual content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="cta-box p-4">
+                    <h2 class="h3 mb-4 section-title">Learning Objectives</h2>
+                    <p>This assignment helps solidify understanding of several key web development concepts:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="objective-list">
+                                <li>Asynchronous JavaScript programming</li>
+                                <li>Working with RESTful APIs</li>
+                                <li>Implementing fetch() and Promises</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="objective-list">
+                                <li>DOM manipulation with JavaScript</li>
+                                <li>Bootstrap responsive design</li>
+                                <li>Modular JavaScript organization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="blog.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-blog me-2"></i>View the Blog Implementation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="mt-5">
