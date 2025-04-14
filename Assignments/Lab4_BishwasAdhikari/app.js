@@ -25,7 +25,16 @@ app.engine('hbs', engine({
   extname: '.hbs',
   defaultLayout: 'main',
   layoutsDir: path.join(__dirname, 'views/layouts'),
-  partialsDir: path.join(__dirname, 'views/partials')
+  partialsDir: path.join(__dirname, 'views/partials'),
+  // Add these helpers
+  helpers: {
+    eq: function (a, b) {
+      return a === b;
+    },
+    not: function (value) {
+      return !value;
+    }
+  }
 }));
 app.set('view engine', 'hbs');
 
@@ -46,7 +55,7 @@ const animalRoutes = require('./routes/animal');
 app.use('/animals', animalRoutes);
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3031;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

@@ -1,0 +1,70 @@
+<h1 class="mb-4">Edit Animal Entry</h1>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Edit Animal</h5>
+    <form action="/animals/update-animal/{{animal._id}}" method="POST">
+      <div class="mb-3">
+        <label for="zoo" class="form-label">Zoo</label>
+        <input type="text" class="form-control" id="zoo" name="zoo" value="{{animal.zoo}}" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="scientificName" class="form-label">Scientific Name</label>
+        <input type="text" class="form-control" id="scientificName" name="scientificName" value="{{animal.scientificName}}" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="commonName" class="form-label">Common Name</label>
+        <input type="text" class="form-control" id="commonName" name="commonName" value="{{animal.commonName}}" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="givenName" class="form-label">Given Name</label>
+        <input type="text" class="form-control" id="givenName" name="givenName" value="{{animal.givenName}}" required>
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label">Gender</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="male" value="Male" {{#if (eq animal.gender "Male")}}checked{{/if}} required>
+          <label class="form-check-label" for="male">Male</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="female" value="Female" {{#if (eq animal.gender "Female")}}checked{{/if}}>
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="dateOfBirth" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" value="{{animal.dateOfBirth}}" required>
+      </div>
+      
+      <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input type="number" class="form-control" id="age" name="age" value="{{animal.age}}" required>
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label">Is Transportable</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="isTransportable" id="available" value="true" {{#if animal.isTransportable}}checked{{/if}} required>
+          <label class="form-check-label" for="available">Available</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="isTransportable" id="unavailable" value="false" {{#if (not animal.isTransportable)}}checked{{/if}}>
+          <label class="form-check-label" for="unavailable">Unavailable</label>
+        </div>
+      </div>
+      
+      <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+    
+    <form action="/animals/delete-animal/{{animal._id}}" method="POST" class="mt-3">
+      <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this animal?')">Delete Record</button>
+    </form>
+  </div>
+</div>

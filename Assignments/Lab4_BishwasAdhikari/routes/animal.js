@@ -8,6 +8,6 @@ router.get('/entry-form', animalController.showEntryForm);
 router.post('/add-animal', animalController.addAnimal);
 router.get('/edit-animal/:id', animalController.showEditForm);
 router.post('/update-animal/:id', animalController.updateAnimal);
-router.get('/delete-animal/:id', animalController.deleteAnimal);
+router.post('/delete-animal/:id', animalController.deleteAnimal);
 
 module.exports = router;
