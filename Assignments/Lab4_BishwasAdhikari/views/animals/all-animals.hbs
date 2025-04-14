@@ -1,0 +1,23 @@
+<h1 class="mb-4">Animal Database</h1>
+
+{{#if animals.length}}
+  {{#each animals}}
+    <div class="card mb-4">
+      <div class="card-body">
+        <p><strong>Zoo:</strong> {{zoo}}</p>
+        <p><strong>Scientific Name:</strong> {{scientificName}}</p>
+        <p><strong>Common Name:</strong> {{commonName}}</p>
+        <p><strong>Given Name:</strong> {{givenName}}</p>
+        <p><strong>Gender:</strong> {{gender}}</p>
+        <p><strong>Date of Birth:</strong> {{dateOfBirth}}</p>
+        <p><strong>Age:</strong> {{age}}</p>
+        <p><strong>Transportability?:</strong> {{#if isTransportable}}AVAILABLE{{else}}UNAVAILABLE{{/if}}</p>
+        
+        <a href="/animals/edit-animal/{{_id}}" class="btn btn-primary">Edit Animal Details</a>
+      </div>
+    </div>
+    <hr>
+  {{/each}}
+{{else}}
+  <p>No animals found in the database.</p>
+{{/if}}
