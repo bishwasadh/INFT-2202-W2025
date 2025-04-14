@@ -93,3 +93,84 @@ h1 {
         transform: translateY(0);
     }
 }
+
+/* Animal list page specific styles */
+.animal-card {
+    overflow: hidden;
+    height: 100%;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08) !important;
+}
+
+.animal-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15) !important;
+}
+
+.animal-card .card-header {
+    background-color: rgba(13, 110, 253, 0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 0.75rem 1.25rem;
+}
+
+.animal-card .card-body {
+    padding: 1.5rem;
+}
+
+.animal-card small.text-muted {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.animal-card p.mb-1 {
+    margin-top: 0.25rem;
+}
+
+.animal-card .fw-bold {
+    font-style: italic;
+}
+
+.animal-card .badge {
+    font-weight: 500;
+    padding: 0.5em 0.85em;
+    border-radius: 20px;
+}
+
+.animal-card .card-footer {
+    padding: 1rem 1.5rem;
+    background-color: white;
+}
+
+.animal-card .btn-outline-primary {
+    transition: all 0.2s ease;
+}
+
+.animal-card .btn-outline-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+}
+
+/* Empty state styling */
+.alert-info {
+    background-color: rgba(13, 202, 240, 0.1);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Add New Animal button styling */
+.btn-primary i {
+    margin-right: 0.5rem;
+}
+
+/* Date formatting */
+.date-display {
+    font-family: 'Courier New', monospace;
+    color: #495057;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .animal-card {
+        margin-bottom: 1.5rem;
+    }
+}
